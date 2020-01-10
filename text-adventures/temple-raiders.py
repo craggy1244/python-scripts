@@ -119,8 +119,8 @@ while game_over is not True:
 
                                     print(Fore.CYAN, end="")
                                     print(
-                                        "You think could reach it with a jump", end=" ")
-                                    print("to swing to the other side." +
+                                        "You think you could reach it with a jump", end=" ")
+                                    print("and swing to the other side." +
                                           Style.RESET_ALL, end=NL_2)
 
                                     print("What do you want to do?", end=NL_2)
@@ -139,7 +139,7 @@ while game_over is not True:
                                         print(Fore.MAGENTA +
                                               Style.BRIGHT, end="")
                                         print(
-                                            "Last year you won Ninja Warrior.", end=" ")
+                                            "HINT: Last year you won Ninja Warrior.", end=" ")
                                         print(
                                             "Your speciality was the ropes.", end=NL_2)
                                         print(Style.RESET_ALL)
