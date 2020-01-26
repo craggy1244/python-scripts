@@ -142,8 +142,43 @@ while game_over is not True:
                                     if choice == "A":
                                         printText(
                                             "You swing across the deadly pit with style!", Fore.YELLOW)
-                                        # while game_over is not True:
-                                        printText("next scene here", Fore.CYAN)
+
+                                        while game_over is not True:
+                                            printText("You turn a corner and enter the inner sanctum. "
+                                                      "Ahead of you, there is a golden chalice "
+                                                      "lit by two beams of sunlight. "
+                                                      "Between you and the prize is a floor of numbered tiles. ",
+                                                      Fore.CYAN)
+                                            choice = inputChoice("What should you do?", [
+                                                "Run across the tiles and grab the golden chalice.",
+                                                "Step on tiles 1, 2, 5, 8",
+                                                "Step on tiles 1, 1, 2, 3, 5, 8"
+                                            ], True)
+
+                                            if choice == "A":
+                                                printText(
+                                                    "You're hit by poisoned arrows and die a painful death!", Fore.YELLOW)
+                                                gameOver()
+
+                                            elif choice == "B":
+                                                printText("Oops! That was the wrong sequence. "
+                                                          "You're hit by poisoned arrows and "
+                                                          "die a painful death.", Fore.YELLOW)
+                                                gameOver()
+
+                                            elif choice == "C":
+                                                printText("You win! You evade the booby traps and "
+                                                          "take the golden chalice back to your "
+                                                          "museum in London.", Fore.YELLOW)
+                                                printText("THE END",
+                                                          Fore.GREEN + Back.LIGHTBLACK_EX + Style.BRIGHT, '')
+                                                print()
+                                                game_over = True
+
+                                            elif choice == "H":
+                                                useHint("Inscribed on the chalice is the Phi "
+                                                        "symbol (the golden ratio)")
+
                                     elif choice == "B":
                                         printText("You take your best run and jump. "
                                                   "Your arms reach the other side but "
